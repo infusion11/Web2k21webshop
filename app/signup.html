@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <title>Regisztracio</title>
+        <link rel="stylesheet" href="/res/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <script src="/app/signup.js"></script>
+    </head>
+    <body class="signupb">
+        <main>
+        <div class="container">
+            <div class="header">
+                <h2>Fiók létrehozása</h2>
+            </div>
+            <div class="signupform" id="signupform">
+                <form onsubmit="registration()">
+                    <div class="formdivs">
+                        <label for="username">Felhasználónév:</label>
+                        <input type="text" name="username" id="username" placeholder="exampleuser" onkeypress="killAllTheSpaces(event)">
+                        <small></small>
+                    </div>
+                    <div class="formdivs">
+                        <label for="email">Email cím:</label>
+                        <input type="email" name="email" id="email" placeholder="e@mail.com" onkeypress="killAllTheSpaces(event)">
+                        <small></small>
+                    </div>
+                    <div class="formdivs">
+                        <label for="phone">Telefonszám:</label>
+                        <input type="text" maxlength="9" name="phone" id="phone" placeholder="309999999" onkeypress="isNumber(event)">
+                        <small></small>
+                    </div>
+                    <div class="formdivs">
+                        <label for="password">Jelszó:</label>
+                        <input type="password" name="password" id="password" placeholder="examplepassword">
+                        <i class="far fa-eye" id="togglePassword" onclick="eyeToggler()"></i>
+                        <small></small>
+                    </div>
+                    <div class="formdivs">
+                        <label for="passwordtwo">Jelszó ismét:</label>
+                        <input type="password" name="passwordtwo" id="passwordtwo" placeholder="examplepassword">
+                        <small></small>
+                    </div>
+                    <button type="submit">Regisztrálok!</button>
+                    <a href="/app/login.html">
+                        <p>Már van meglévő fiókom!</p>
+                    </a>
+                </form>
+            </div>
+        </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.signupb{
+    background: linear-gradient(90deg,#9932CC,#FA8072,#FFA500,#9932CC);
+}
+.loginb{
+    background: linear-gradient(90deg,#9932CC,#FFA500,#FA8072,#9932CC);
+}
+.container{
+    background-color: ghostwhite;
+    border: 2px solid;
+}
+.header{
+    padding-top: 10px;
+}
+.header h2{
+    margin: 10px;
+    padding-left: 30px;
+}
+.signupform{
+    margin: 10px;
+    padding: 20px;
+    width: fit-content;
+}
+.signupform p{
+    margin: 0px;
+    padding-left: 40px;
+    font-size: 14px;
+}
+.formdivs{
+    margin: 5px;
+    padding: 5px;
+}
+.formdivs label{
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+.formdivs input{
+    border: 2px solid gray;
+    border-radius: 4px;
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    width:100%;
+}
+.formdivs small{
+    color: red;
+    visibility: hidden;
+    position: absolute;
+    font-size: 15px;
+}
+.formdivs.success input{
+    border-color: green;
+}
+.formdivs.error input{
+    border-color: red;
+}
+.formdivs.error small{
+    color: red;
+    visibility: visible;
+}
+.formdivs i{
+    position: absolute;
+    margin-left: 210px;
+    margin-top: -25px;
+    cursor: pointer;
+    color: gray;
+}
+button{
+    height:50px;
+    width:200px;
+    margin: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(90deg,#00CED1,#f441a5,#00FF00,#00CED1);
+    background-size: 400%;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
