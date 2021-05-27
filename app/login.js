@@ -85,7 +85,7 @@ function logintoAcc(e){
         document.getElementById("password").value="";
         document.getElementById("phone").value="";
 
-        window.location="app/home.html";
+        window.location="./home.html";
     }
 }
 

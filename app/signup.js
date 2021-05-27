@@ -122,7 +122,7 @@ function registration(e){
         document.getElementById("password").value="";
         document.getElementById("passwordtwo").value="";
 
-        window.location="app/home.html";
+        window.location="./home.html";
     }
 }
 
