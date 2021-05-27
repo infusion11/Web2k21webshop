@@ -116,6 +116,12 @@ function registration(e){
         localStorage.setItem(uname, json);
         //console.log('added');
 
+        var currUser = {
+            username: uname,
+        };
+        var json = JSON.stringify(currUser);
+        localStorage.setItem('currUser', json);
+        
         document.getElementById("username").value="";
         document.getElementById("email").value="";
         document.getElementById("phone").value="";

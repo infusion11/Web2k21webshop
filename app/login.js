@@ -79,7 +79,7 @@ function logintoAcc(e){
         var json = JSON.stringify(currUser);
         localStorage.setItem('currUser', json);
         /*
-        Logoutnál töröljük a currUser key-el rendelkező felhasználót localstorageből, így kvázi egy sessiont emulálunk vele.
+        Logoutnál töröljük a currUser key-el rendelkező felhasználót localstorageből, így kvázi egy sessiont emulálunk vele?
         */
         document.getElementById("username").value="";
         document.getElementById("password").value="";
