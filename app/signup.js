@@ -36,16 +36,18 @@ function registration(e){
         setErrorMessage(username, 'Tiltott felhasználónév!');
         problemflag=1;
     }else{
-        for (let i = 0; i < localStorage.length; i++){
+        let duplication=0;
+        for(let i = 0; i < localStorage.length; i++){
             const key = localStorage.key(i);
             if(uname === key){
                 setErrorMessage(username, 'Foglalt név!');
+                duplication=1;
                 problemflag=1;
             }
-            else{
-                setSuccessMessage(username);
-                problemflag=0;
-            }
+        }
+        if(duplication === 0){
+            setSuccessMessage(username);
+            problemflag=0;
         }
     }
     //mail

@@ -40,6 +40,7 @@ function logintoAcc(e){
         }
     }else{
         setErrorMessage(username, 'Még senki nem regisztrált az oldalra!');
+        problemflag=1;
     }
     //pwcheck
     if(pw === ''){
