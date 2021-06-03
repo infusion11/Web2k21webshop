@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    
+    <title>Webshop</title>
+</head>
+<body>
+ 
+ <header>
+    <h1>Személyes Adatok</h1>   
+    </header>
+
+    <nav>
+      <a class="fakebutton" href="./../Web2k21webshop-master/app/home.html">Főoldal</a>
+    </nav>
+ 
+   <nav>
+     <h2>Kérjük adja meg személyes adatait!</h2>
+   </nav>
+    
+    <nav class="format">        
+    <form id="adatok" onsubmit=modify()>
+      <div>
+        <label for="username">Felhasználónév:</label>
+        <label class="bejelentkezve" id="username"></label>
+      </div>
+      <div>
+        <label for="e-mail">E-mail cím:</label>
+        <input type="text" name="email" id="email" value="" >
+        <label class="error" id="emailerror"> </label>
+      </div>
+      <div>
+        <label for="fullname">Teljes név:</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Példa Péter" value="" >
+        <label class="error" id="fullnameerror"> </label>
+                
+      </div>
+
+      <div>
+        <label for="tel">Telefonszám:</label>
+        
+         <input type="text" name="tel" id="tel" placeholder="701234567" value="" onkeypress="isNumber(event)">
+         <label class="error" id=telerror> </label>
+               
+       
+       <label class="telefon" for="tel">+36</label>
+      </div>
+       
+      <div>
+        <label for="zip">Irányítószám:</label>
+        <input type="text" name="zip" id="zip" placeholder="1234" value=""></input>
+        <label class="error" id="ziperror"> </label>
+                
+      </div>
+      
+      <div>
+        <label for="city">Város:</label>
+        <input type="text" name="city" id="city" placeholder="Zedváros" value="" > 
+        <label class="error" id="cityerror"> </label>
+                
+      </div>
+      
+      <div>
+        <label for="szal_address">Szállítási cím:</label>
+        <input type="text" name="szal_address" id="szal_address" placeholder="Neptun utca 5" value="" >
+        <label class="error" id="szal_addresserror"> </label>
+                
+      </div>
+      
+      <div>
+        <label for="szam_address">Számlázási cím:</label>
+        <input type="text" name="szam_address" id="szam_address" placeholder="Neptun utca 2" value="" >
+        <label class="error" id="szam_addresserror"> </label>
+                
+      </div>
+    
+      <div style="background-color:white;">
+        <button class="button" type="submit">Módosít</button>
+      </div>
+
+    </form> 
+    </nav>
+    
+  <script src="C:/XAMPP/htdocs/Webshop/bead/adatlap.js"></script>  
+</body>
+
+</html>
