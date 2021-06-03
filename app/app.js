@@ -2,6 +2,12 @@ import HomeScreen from "../screens/HomeScreen.js";
 import TermekScreen from '../screens/TermekScreen.js';
 import {parseRequestUrl} from './utils.js';
 import Error404Screen from '../screens/Error404Screen.js';
+
+window.onload=function sessionEmu(){
+    if(localStorage.getItem('currUser') === null){
+        window.location="./login.html";
+    }
+}
 const routes={
     '/': HomeScreen,
     '/termek/:id': TermekScreen,

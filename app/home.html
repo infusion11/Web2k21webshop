@@ -25,10 +25,13 @@
             <a href="/#/signin">Profil(Bence)</a>
             <a href="/#/cart">Kosár(ha lesz)</a>
             <a href="#/market">Piac(Dani)</a>
-            <a href="/#/logout">Kijelentkezés</a>
+            <a href="./login.html" onclick="deleteCurr()">Kijelentkezés</a>
         </div>
-
-
+<script>
+    function deleteCurr(){
+        localStorage.removeItem('currUser');
+    }
+</script>
     </header>
 
     <main id="main-container">
