@@ -1,4 +1,5 @@
-import data from '../app/data.js'; //Itt importálom be az adatokat
+import data from '../app/data.js';
+import Ertekeles from "../app/rating.js"; //Itt importálom be az adatokat
 const HomeScreen = { //ez olyan mint egy obejktum
     //visszadjuk a rendezetlen terméklistát átkonvertálva az ul-be
     render: () => {
@@ -26,6 +27,12 @@ const HomeScreen = { //ez olyan mint egy obejktum
                     ${termek.ar} Ft
                 </a>
             </div>
+           <div class="termek-ertekeles">
+          ${Ertekeles.render({
+            value: termek.ertekeles,
+            text: `${termek.ertekelesSzama} ertekeles`,
+        })}
+        </div>
             </div>
           </li>
         `)}
