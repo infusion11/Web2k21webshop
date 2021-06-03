@@ -93,19 +93,21 @@ function registration(e){
     }else{
         setSuccessMessage(password);
         problemflag=0;
+
+        //pw2
+        if(pwtwo === ''){
+            setErrorMessage(passwordtwo, 'Ez a mező nem lehet üres!');
+            problemflag=1;
+        }
+        else if(pwtwo != pw){
+            setErrorMessage(passwordtwo, 'Meg kell egyeznie a fenti jelszóval!');
+            problemflag=1;
+        }else{
+            setSuccessMessage(passwordtwo);
+            problemflag=0;
+        }
     }
-    //pw2
-    if(pwtwo === ''){
-        setErrorMessage(passwordtwo, 'Ez a mező nem lehet üres!');
-        problemflag=1;
-    }
-    else if(pwtwo != pw){
-        setErrorMessage(passwordtwo, 'Meg kell egyeznie a fenti jelszóval!');
-        problemflag=1;
-    }else{
-        setSuccessMessage(passwordtwo);
-        problemflag=0;
-    }
+    
 
     if(problemflag === 0){
         var user = {
