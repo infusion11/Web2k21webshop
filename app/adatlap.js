@@ -105,14 +105,14 @@ else{
     //tel
     if(tel === ''){
         document.getElementById('telerror').innerHTML="Nem adott meg értéket!"
-        user['tel']=udatafromLS.phone;
+        user['tel']=tokmindegymivanitt;
     }
     else if(tel.length == 9){
         user['tel']=tel;
        document.getElementById('telerror').innerHTML=""
     }else{
        document.getElementById('telerror').innerHTML="Nem helyes a megadott telefonszám!"
-        user['tel']=udatafromLS.phone;
+        user['tel']=tokmindegymivanitt;
     }
     //zip
     if(zip ===''){
@@ -174,7 +174,6 @@ else{
         var json = JSON.stringify(currUser);
         localStorage.setItem('currUser', json);
     }
-
 
 
 function checkMail(email){

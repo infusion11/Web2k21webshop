@@ -126,3 +126,8 @@ a{
 a:hover,.button:hover{
     background-color: rgb(103, 3, 150);
 }
+
+.bejelentkezve{
+    float: right;
+    margin-right: 60px;
+}
